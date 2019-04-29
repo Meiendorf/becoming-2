@@ -1,0 +1,9 @@
+language: java
+jdk: oraclejdk8
+script:
+  - mvn clean verify
+cache:
+  - .autoconf
+  - $HOME/.m2
+before_install:
+  - chmod +x mvnw
